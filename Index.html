@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Cuarenta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 1em;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        ul {
+            padding-left: 1.5em;
+        }
+        .rules, .points {
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Juego del Cuarenta</h1>
+        <p>Juego del Cuarenta</p>
+    </header>
+    <main>
+        <section class="description">
+            <h2>Descripción</h2>
+            <p>El Cuarenta es un juego de cartas muy popular en Ecuador. Se juega en parejas y el objetivo es ser el primer equipo en alcanzar exactamente 40 puntos.</p>
+        </section>
+        <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+<df-messenger
+  project-id="agente-de-base-de-conocimiento"
+  agent-id="aa83c9a5-d831-4836-afa0-99df15570e73"
+  language-code="es"
+  max-query-length="-1">
+  <df-messenger-chat-bubble
+   chat-title="Regla del Cuarenta">
+  </df-messenger-chat-bubble>
+</df-messenger>
+<style>
+  df-messenger {
+    z-index: 999;
+    position: fixed;
+    --df-messenger-font-color: #000;
+    --df-messenger-font-family: Google Sans;
+    --df-messenger-chat-background: #f3f6fc;
+    --df-messenger-message-user-background: #d3e3fd;
+    --df-messenger-message-bot-background: #fff;
+    bottom: 16px;
+    right: 16px;
+  }
+</style>
+        <section class="rules">
+            <h2>Reglas del Juego</h2>
+            <ul>
+                <li>Se juega con una baraja de 40 cartas españolas, sin los ochos y nueves.</li>
+                <li>El objetivo es alcanzar 40 puntos antes que el equipo contrario.</li>
+                <li>Si en tu turno pones una carta que coincide en número con la última carta del descarte, robas esas cartas.</li>
+                <li>Caída: si robas dos cartas del mismo valor en una jugada, obtienes 2 puntos adicionales.</li>
+                <li>Limpia: si robas todas las cartas del montón de descarte, ganas 2 puntos adicionales.</li>
+                <li>Para ganar, debes llegar a 40 puntos exactos; si te pasas, vuelves a 20 puntos.</li>
+            </ul>
+        </section>
+
+        <section class="points">
+            <h2>Tabla de Puntos</h2>
+            <ul>
+                <li>Carta robada: 1 punto</li>
+                <li>Caída: 2 puntos adicionales</li>
+                <li>Limpia: 2 puntos adicionales</li>
+                <li>Doblete: puntos adicionales si se hacen dos caídas en un mismo turno</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
